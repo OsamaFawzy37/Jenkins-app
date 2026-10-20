@@ -17,4 +17,3 @@ ENV CASC_JENKINS_CONFIG="/var/jenkins_home/casc_configs/"
 RUN jenkins-plugin-cli --plugins "configuration-as-code job-dsl workflow-aggregator git kubernetes docker-workflow"
 
 COPY casc.yaml /var/jenkins_home/casc_configs/casc.yaml
-COPY seed-job.groovy /usr/share/jenkins/ref/init.groovy.d/seed-job.groovy
